@@ -1,0 +1,5 @@
+{"properties": [{
+  "name": "rickandmortyapi.baseurl",
+  "type": "java.lang.String",
+  "description": "Base URL a la API de Rick and Morty"
+}]}

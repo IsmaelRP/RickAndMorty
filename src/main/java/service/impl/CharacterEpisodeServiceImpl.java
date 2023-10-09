@@ -14,13 +14,14 @@ public class CharacterEpisodeServiceImpl implements CharacterEpisodeService {
 	private final RestTemplate restTemplate;
     private final String apiUrl;
     
+    
     public CharacterEpisodeServiceImpl(RestTemplate restTemplate, @Value("${rickandmortyapi.baseurl}") String apiUrl) {
         this.restTemplate = restTemplate;
         this.apiUrl = apiUrl;
     }
     
 	@Override
-	public CharacterEpisode findCharacterEpisodeByName(String name) {
+	public CharacterEpisode findCharacterEpisodeByName(String name) {		
 		String fullUrl = apiUrl + "character?name=" + name;
 
         CharacterEpisode data = restTemplate.getForObject(fullUrl, CharacterEpisode.class);

@@ -1,0 +1,5 @@
+server:
+  port : 3456
+
+rickandmortyapi:
+  baseurl:  https://rickandmortyapi.com/api/
